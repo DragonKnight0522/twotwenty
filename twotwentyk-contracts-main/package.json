@@ -1,0 +1,42 @@
+{
+  "scripts": {
+    "ganache": "ganache-cli --port 8545 --accounts 5 --networkId 5777 --deterministic --mnemonic 'lava benefit duty grief risk curious taste dumb lobster reform neglect black'",
+    "compile": "hardhat compile",
+    "test": "hardhat test --network hardhat",
+    "factory": "hardhat deploy:Factory --network",
+    "collection": "hardhat deploy:Collection --network",    
+    "packopener": "hardhat deploy:PackOpener --network",
+    "crafting": "hardhat deploy:CollectionCrafting --network",
+    "prediction": "hardhat deploy:PredictionCrafting --network",
+    "upgrade": "hardhat upgrade:contract --network"
+  },
+  "dependencies": {
+    "chai": "^4.3.4",
+    "dotenv": "^8.2.0",
+    "hardhat": "^2.5.0",
+    "hardhat-gas-reporter": "^1.0.9",
+    "mocha": "*",
+    "solidity-coverage": "^0.8.2"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.2",
+    "@nomicfoundation/hardhat-ethers": "^3.0.4",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.8",
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "@nomicfoundation/hardhat-verify": "^1.1.1",
+    "@nomiclabs/hardhat-ethers": "^2.0.0",
+    "@nomiclabs/hardhat-etherscan": "^2.1.6",
+    "@openzeppelin/contracts": "^4.5.0",
+    "@openzeppelin/contracts-upgradeable": "^4.5.0",
+    "@openzeppelin/hardhat-upgrades": "^1.17.0",
+    "@typechain/ethers-v6": "^0.5.0",
+    "@typechain/hardhat": "^9.0.0",
+    "@types/chai": "^4.3.5",
+    "@types/mocha": "^10.0.1",
+    "chai": "*",
+    "ethereum-waffle": "^3.2.0",
+    "ethers": "^5.0.0",
+    "ts-node": "^10.9.1",
+    "typechain": "^8.3.1"
+  }
+}

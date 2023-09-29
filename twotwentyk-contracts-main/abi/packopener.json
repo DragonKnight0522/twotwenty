@@ -1,0 +1,142 @@
+[
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "previousOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_newAdmin",
+        "type": "address"
+      }
+    ],
+    "name": "changeAdmin",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "initialize",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_tokenId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "_cardPackAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_categoryAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_yearAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_dayMonthAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_craftingCardAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_triggerContract",
+        "type": "address"
+      },
+      {
+        "internalType": "string[]",
+        "name": "_tokenCategories",
+        "type": "string[]"
+      },
+      {
+        "internalType": "string[]",
+        "name": "_tokenYears",
+        "type": "string[]"
+      },
+      {
+        "internalType": "string[]",
+        "name": "_tokenDayMonths",
+        "type": "string[]"
+      },
+      {
+        "internalType": "string[]",
+        "name": "_tokenCraftingCards",
+        "type": "string[]"
+      },
+      {
+        "internalType": "string[]",
+        "name": "_tokenTriggers",
+        "type": "string[]"
+      }
+    ],
+    "name": "openPack",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "renounceOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "transferOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]
